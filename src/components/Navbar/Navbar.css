@@ -5,5 +5,23 @@
 * @import "../../stylesheets/variables.scss";
 ***********************************************************************/
 .Navbar {
-  background-color: #991324;
-  color: #F1F1F6; }
+  box-shadow: 0 1px 2px #999;
+  display: flex;
+  justify-content: flex-end; }
+  .Navbar button {
+    background-color: inherit;
+    border: none;
+    margin: 0.5em 1em;
+    padding: 0.3em;
+    min-width: 5em;
+    text-transform: capitalize; }
+    @media (min-width: 35em) {
+      .Navbar button {
+        font-size: 1rem; } }
+    @media (min-width: 35em) {
+      .Navbar button {
+        font-size: 1.2rem; } }
+    .Navbar button:hover {
+      color: #368DDE;
+      cursor: pointer;
+      transition: all 0.3s; }

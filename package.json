@@ -1,6 +1,6 @@
 {
-  "name": "React Boilerplate",
-  "homepage": "https://gitname.github.io/gitrepo-name/",
+  "name": "portfolio",
+  "homepage": "https://ryanjmack.github.io/portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

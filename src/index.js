@@ -8,6 +8,6 @@ document.body.classList.add('body');
 document.querySelector('html').classList.add('html');
 
 ReactDOM.render(
-  <App display='home'/>,
+  <App />,
   document.getElementById('root')
 );

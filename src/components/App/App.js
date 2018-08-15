@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Navbar from '../Navbar/Navbar.js';
 
 class App extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class App extends React.Component {
     else { // home page
       return (
         <div className="App">
+          <Navbar />
           <h1>{this.props.display}</h1>
         </div>
       )

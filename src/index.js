@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App/App';
-import './components/styles.css';
+import './stylesheets/styles.css';
 
 // add classes to the body and html element for basic styling
 document.body.classList.add('body');

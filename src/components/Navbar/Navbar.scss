@@ -1,31 +1,55 @@
 @import "../../stylesheets/variables.scss";
 
 .Navbar {
-  box-shadow: 0 1px 2px #999;
+  align-items: center;
+  color: #333;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
 
+.Navbar__right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
 
   button {
     background-color: inherit;
     border: none;
-    margin: 0.5em 1em;
-    padding: 0.3em;
+    font-size: 1rem;
+    padding: 1em 0.3em;
     min-width: 5em;
     text-transform: capitalize;
 
-    @media (min-width: 35em) {
-      font-size: 1rem;
+    @media (min-width: 24em) {
+      font-size: 1.1rem;
+      margin: 0 0.3em;
     }
 
     @media (min-width: 35em) {
       font-size: 1.2rem;
+      margin: 0 1em;
+    }
+
+    @media (min-width: 45em) {
+      margin: 0 2em;
     }
 
     &:hover {
-      color: $blue;
+      color: #2b9f8f;
       cursor: pointer;
       transition: all 0.3s;
     }
+  }
+}
+
+.Navbar__left {
+  fill: $primary-teal;
+  height: 60px;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+  width: 60px;
+
+  @media (min-width: 500px) {
+    margin: 1rem 0 1rem 1rem;
+
   }
 }

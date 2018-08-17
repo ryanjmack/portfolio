@@ -1,0 +1,56 @@
+@import "../../stylesheets/variables.scss";
+
+.Hero {
+  flex: 1;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 90%;
+
+  a {
+    color: $blue;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  h1, h2 {
+    line-height: 50px;
+    margin: 0;
+    max-width: 625px;
+    padding: 0;
+
+    @media (min-width: 24em) {
+      margin: 0 0.3rem;
+    }
+
+    @media (min-width: 35em) {
+      margin: 0 1rem;
+    }
+
+    @media (min-width: 45em) {
+      margin: 0 2rem;
+    }
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-top: 1.5em;
+
+    @media (min-width: 35em) {
+      font-size: 4rem;
+    }
+  }
+
+  h2 {
+    line-height: 1.5em;
+    font-size: 1.5rem;
+    margin-top: 1em;
+
+    @media (min-width: 35em) {
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+/***********************************************************************
+* File that contains variables that components van utilize.
+*
+* Here's an example of the Navbar.scss file importing this file:
+* @import "../../stylesheets/variables.scss";
+***********************************************************************/
+.Hero {
+  flex: 1;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 90%; }
+  .Hero a {
+    color: #368DDE;
+    text-decoration: none;
+    transition: color 0.2s; }
+    .Hero a:hover {
+      color: inherit; }
+  .Hero h1, .Hero h2 {
+    line-height: 50px;
+    margin: 0;
+    max-width: 625px;
+    padding: 0; }
+    @media (min-width: 24em) {
+      .Hero h1, .Hero h2 {
+        margin: 0 0.3rem; } }
+    @media (min-width: 35em) {
+      .Hero h1, .Hero h2 {
+        margin: 0 1rem; } }
+    @media (min-width: 45em) {
+      .Hero h1, .Hero h2 {
+        margin: 0 2rem; } }
+  .Hero h1 {
+    font-size: 2rem;
+    margin-top: 1.5em; }
+    @media (min-width: 35em) {
+      .Hero h1 {
+        font-size: 4rem; } }
+  .Hero h2 {
+    line-height: 1.5em;
+    font-size: 1.5rem;
+    margin-top: 1em; }
+    @media (min-width: 35em) {
+      .Hero h2 {
+        font-size: 2rem; } }

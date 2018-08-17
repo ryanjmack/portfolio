@@ -1,2 +1,11 @@
+/***********************************************************************
+* File that contains variables that components van utilize.
+*
+* Here's an example of the Navbar.scss file importing this file:
+* @import "../../stylesheets/variables.scss";
+***********************************************************************/
 .App {
-  color: blue; }
+  color: #333;
+  display: flex;
+  height: 100vh;
+  flex-direction: column; }

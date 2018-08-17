@@ -6,6 +6,7 @@
 ***********************************************************************/
 .Navbar {
   align-items: center;
+  box-shadow: 0 0 1px #333;
   color: #333;
   display: flex;
   justify-content: space-between; }
@@ -17,6 +18,7 @@
   .Navbar__right button {
     background-color: inherit;
     border: none;
+    color: inherit;
     font-size: 1rem;
     padding: 1em 0.3em;
     min-width: 5em;
@@ -33,15 +35,25 @@
       .Navbar__right button {
         margin: 0 2em; } }
     .Navbar__right button:hover {
-      color: #2b9f8f;
+      color: #368DDE;
       cursor: pointer;
       transition: all 0.3s; }
 
 .Navbar__left {
-  fill: #2b9f8f;
+  fill: #368DDE;
   height: 60px;
-  margin: 0.5rem 0 0.5rem 0.5rem;
+  margin: 0.5em 0 0.5em 0.5em;
   width: 60px; }
   @media (min-width: 500px) {
     .Navbar__left {
-      margin: 1rem 0 1rem 1rem; } }
+      margin: 1em 0 1em 1em; } }
+  @media (min-width: 45em) {
+    .Navbar__left {
+      height: 75px;
+      margin: 2em 0 2em 2em;
+      width: 75px; } }
+  @media (min-width: 67.5em) {
+    .Navbar__left {
+      height: 100px;
+      margin: 2.5em 0 2.5em 2.5em;
+      width: 100px; } }

@@ -1,0 +1,98 @@
+@import "../../stylesheets/variables.scss";
+
+
+.About {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  font-size: 1rem;
+  justify-content: center;
+  width: 100%;
+
+  a {
+    color: $blue;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  h1 {
+    color: $blue;
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+    margin-top: 0;
+
+    @media (min-width: 31.25em) {
+      font-size: 3em;
+    }
+
+    @media (min-width: 45em) {
+      font-size: 3.5em;
+    }
+
+    @media (min-width: 67.5em) {
+      font-size: 4em;
+    }
+  }
+
+  p {
+    line-height: 1.7em;
+    margin: 0;
+    padding: 1em 0;
+    padding-right: 1em;
+    text-align: justify;
+  }
+}
+
+
+.About__content {
+  margin: 1em 0.5em 0.5em 0.5em;
+  max-width: 52em;
+  padding-bottom: 2em;
+
+  @media (min-width: 500px) {
+    margin: 1em 0.5em 1em 1em;
+  }
+
+  @media (min-width: 45em) {
+    margin: 2em 0.5em 2em 2em;
+  }
+
+  @media (min-width: 55em) {
+    margin-right: auto;
+  }
+
+  @media (min-width: 67.5em) {
+    margin: 3em auto 3.5em 2.5em;
+  }
+}
+
+
+.About__highlight {
+  background-color: lighten($blue, 37%);
+  padding: 0.1em;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: lighten($blue, 30%);
+  }
+}
+
+
+.About .About__resume {
+  background-color: $blue;
+  color: #eee;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  margin: 1.2em 0;
+  padding: 0.5em;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: lighten($blue, 7%);
+    color: white;
+  }
+}

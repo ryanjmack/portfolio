@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from '../Navbar/Navbar.js';
 import Hero from '../Hero/Hero.js';
+import About from '../About/About.js';
 
 
 class App extends React.Component {
@@ -36,7 +37,7 @@ class App extends React.Component {
       return (
         <div className="App">
           <Navbar handleClick={this.handleClick} activeButton={activeButton} />
-          <h1>{activeButton}</h1>
+          <About />
         </div>
       );
     }

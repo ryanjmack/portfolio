@@ -4,6 +4,7 @@ import Navbar from '../Navbar/Navbar.js';
 import Hero from '../Hero/Hero.js';
 import About from '../About/About.js';
 import Portfolio from '../Portfolio/Portfolio.js';
+import Contact from '../Contact/Contact.js';
 
 
 class App extends React.Component {
@@ -56,7 +57,7 @@ class App extends React.Component {
       return (
         <div className="App">
           <Navbar handleClick={this.handleClick} activeButton={activeButton} />
-          <h1>{activeButton}</h1>
+          <Contact />
         </div>
       );
     }

@@ -1,33 +1,9 @@
 /***********************************************************************
-* File that contains basic styles for the page.
-* Styles for individual components will be found in their directory
-* in components/
-***********************************************************************/
-/***********************************************************************
 * File that contains variables that components van utilize.
 *
 * Here's an example of the Navbar.scss file importing this file:
 * @import "../../stylesheets/variables.scss";
 ***********************************************************************/
-.html {
-  box-sizing: border-box;
-  color: #333;
-  font-size: 1rem;
-  font-family: 'Arial', 'Helvetica', sans-serif;
-  max-width: 100vw;
-  min-height: 100vh; }
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit; }
-
-.body {
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 0;
-  width: 100%; }
-
 .Portfolio {
   display: flex;
   justify-content: center;
@@ -44,15 +20,16 @@
 .Portfolio__card {
   align-items: center;
   background-color: #f6f6f6;
-  box-shadow: 1px 1px 4px #1c66ab;
+  box-shadow: 1px 1px 4px #333;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   font-size: 1rem;
+  justify-content: space-between;
   margin: 1.5em;
   padding: 1em;
   width: 20em;
-  text-align: justify; }
+  text-align: center; }
   .Portfolio__card a {
     background-color: #368DDE;
     border-radius: 4px;
@@ -67,20 +44,26 @@
       background-color: orange;
       color: inherit; }
     .Portfolio__card a:first-of-type {
-      margin-top: 1em; }
-    .Portfolio__card a:last-of-type {
-      margin-bottom: 1em; }
-  .Portfolio__card figure {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    min-height: 17em; }
-  .Portfolio__card figcaption {
-    color: #333;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0.5rem 0 1rem;
-    text-align: center; }
+      margin-right: 2em; }
+  .Portfolio__card h2 {
+    color: #368DDE; }
   .Portfolio__card p {
-    margin: 0.5em 0; }
+    margin: 0.7em 0;
+    text-align: justify; }
+
+.Portfolio__links {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  margin-top: auto;
+  width: 100%; }
+
+.Portfolio__tag {
+  background-color: #b9d8f4;
+  color: #154c80;
+  margin: 0 0.5em;
+  padding: 0.3em;
+  transition: background-color 0.3s; }
+  .Portfolio__tag:hover {
+    background-color: #8ebfec; }

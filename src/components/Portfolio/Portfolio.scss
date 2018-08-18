@@ -1,4 +1,4 @@
-@import '../../stylesheets/styles.scss';
+@import '../../stylesheets/variables.scss';
 
 .Portfolio {
   display: flex;
@@ -19,15 +19,16 @@
 .Portfolio__card {
   align-items: center;
   background-color: darken($background-color, 1%);
-  box-shadow: 1px 1px 4px darken($blue, 15%);
+  box-shadow: 1px 1px 4px $text-color;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   font-size: 1rem;
+  justify-content: space-between;
   margin: 1.5em;
   padding: 1em;
   width: 20em;
-  text-align: justify;
+  text-align: center;
 
   a {
     background-color: $blue;
@@ -46,33 +47,38 @@
     }
 
     &:first-of-type {
-      margin-top: 1em;
-    }
-
-    &:last-of-type {
-      margin-bottom: 1em;
+      margin-right: 2em;
     }
   }
 
-  figure {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    min-height: 17em;
-  }
-
-  figcaption {
-    color: $text-color;
-    font: {
-      size: 1.2rem;
-      weight: bold;
-    }
-    margin: 0.5rem 0 1rem;
-    text-align: center;
+  h2 {
+    color: $blue;
   }
 
   p {
-    margin: 0.5em 0;
+    margin: 0.7em 0;
+    text-align: justify;
+  }
+}
+
+
+.Portfolio__links {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  margin-top: auto;
+  width: 100%;
+}
+
+.Portfolio__tag {
+  background-color: lighten($blue, 30%);
+  color: darken($blue, 25%);
+  margin: 0 0.5em;
+  padding: 0.3em;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: lighten($blue, 20%);
   }
 }

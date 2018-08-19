@@ -23,8 +23,8 @@ class Portfolio extends React.Component {
           <h2>{project.name}</h2>
           <p>{project.description}</p>
           <div className='Portfolio__links'>
-            <a href={project.src}>Github</a>
-            <a href={project.demo}>Demo</a>
+            <a href={project.src} target="_blank">Github</a>
+            <a href={project.demo} target="_blank">Demo</a>
           </div>
           <p>{
             project.tags.map((tag, i) => {

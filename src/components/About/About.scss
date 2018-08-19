@@ -39,11 +39,15 @@
   }
 
   p {
+    font-size: 1.1rem;
     line-height: 1.7em;
     margin: 0;
     padding: 1em 0;
-    padding-right: 1em;
     text-align: justify;
+
+    @media (min-width: 45em) {
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -53,12 +57,12 @@
   max-width: 52em;
   padding-bottom: 2em;
 
-  @media (min-width: 500px) {
-    margin: 1em 0.5em 1em 1em;
+  @media (min-width: 31.25em) {
+    margin: 1em;
   }
 
   @media (min-width: 45em) {
-    margin: 2em 0.5em 2em 2em;
+    margin: 2em;
   }
 
   @media (min-width: 55em) {
@@ -77,22 +81,28 @@
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: lighten($blue, 30%);
+    background-color: lighten($blue, 28%);
   }
 }
 
 
+.About .About__last-paragraph {
+  margin-bottom: 2em;
+}
+
+
+// extra specifity needed for the resume sectsion
 .About .About__resume {
   background-color: $blue;
   color: #eee;
   border-radius: 3px;
   font-size: 1.2rem;
-  margin: 1.2em 0;
+  margin: 0 0 1.2em;
   padding: 0.5em;
   transition: all 0.3s;
 
   &:hover {
-    background-color: lighten($blue, 7%);
+    background-color: darken($blue, 10%);
     color: white;
   }
 }

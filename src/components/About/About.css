@@ -32,22 +32,25 @@
       .About h1 {
         font-size: 4em; } }
   .About p {
+    font-size: 1.1rem;
     line-height: 1.7em;
     margin: 0;
     padding: 1em 0;
-    padding-right: 1em;
     text-align: justify; }
+    @media (min-width: 45em) {
+      .About p {
+        font-size: 1.2rem; } }
 
 .About__content {
   margin: 1em 0.5em 0.5em 0.5em;
   max-width: 52em;
   padding-bottom: 2em; }
-  @media (min-width: 500px) {
+  @media (min-width: 31.25em) {
     .About__content {
-      margin: 1em 0.5em 1em 1em; } }
+      margin: 1em; } }
   @media (min-width: 45em) {
     .About__content {
-      margin: 2em 0.5em 2em 2em; } }
+      margin: 2em; } }
   @media (min-width: 55em) {
     .About__content {
       margin-right: auto; } }
@@ -60,16 +63,19 @@
   padding: 0.1em;
   transition: background-color 0.3s; }
   .About__highlight:hover {
-    background-color: #b9d8f4; }
+    background-color: #b1d3f2; }
+
+.About .About__last-paragraph {
+  margin-bottom: 2em; }
 
 .About .About__resume {
   background-color: #368DDE;
   color: #eee;
   border-radius: 3px;
   font-size: 1.2rem;
-  margin: 1.2em 0;
+  margin: 0 0 1.2em;
   padding: 0.5em;
   transition: all 0.3s; }
   .About .About__resume:hover {
-    background-color: #559ee3;
+    background-color: #2073c1;
     color: white; }

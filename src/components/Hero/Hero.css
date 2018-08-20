@@ -30,15 +30,18 @@
       .Hero h1, .Hero h2 {
         margin: 0 2rem; } }
   .Hero h1 {
-    font-size: 2rem;
-    margin-top: 1.5em; }
+    font-size: 2.5rem;
+    margin: 1.5em 0 1em; }
     @media (min-width: 35em) {
       .Hero h1 {
         font-size: 4rem; } }
   .Hero h2 {
     line-height: 1.5em;
-    font-size: 1.5rem;
-    margin-top: 1em; }
+    font-size: 1.3rem;
+    margin: 1em 0 0; }
+    @media (min-width: 22.5em) {
+      .Hero h2 {
+        font-size: 1.5rem; } }
     @media (min-width: 35em) {
       .Hero h2 {
         font-size: 2rem; } }

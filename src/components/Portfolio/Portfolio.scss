@@ -6,14 +6,9 @@
   flex-wrap: wrap;
   flex: 1;
   font-size: 1rem;
-  margin: 2em auto 1em;
+  margin: 0 auto 1em;
   max-width: 100%;
   width: 70em;
-
-  img {
-    height: 175px;
-    width: 175px;
-  }
 }
 
 .Portfolio__card {
@@ -25,7 +20,7 @@
   flex-direction: column;
   font-size: 1rem;
   justify-content: space-between;
-  margin: 1.5em;
+  margin: 1em;
   padding: 1em;
   width: 20em;
   text-align: center;
@@ -80,5 +75,42 @@
 
   &:hover {
     background-color: lighten($blue, 20%);
+  }
+}
+
+
+.Portfolio__title {
+  font-size: 1rem;
+  margin: 2em 0 1em 0.5em;
+  width: 100%;
+
+  @media (min-width: 31.25em) {
+    margin-left: 1em;
+  }
+
+  @media (min-width: 45em) {
+    margin-left: 2em;
+  }
+
+  @media (min-width: 67.5em) {
+    margin-left: 2.5em;
+  }
+
+  h1 {
+    color: $blue;
+    font-size: 2.5em;
+    margin: 0;
+
+    @media (min-width: 31.25em) {
+      font-size: 3em;
+    }
+
+    @media (min-width: 45em) {
+      font-size: 3.5em;
+    }
+
+    @media (min-width: 67.5em) {
+      font-size: 4em;
+    }
   }
 }

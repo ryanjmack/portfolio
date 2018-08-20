@@ -31,4 +31,8 @@
 
 
 #root {
+  // get rid of chrome's button focus
+  button:focus {
+    outline:0;
+  }
 }

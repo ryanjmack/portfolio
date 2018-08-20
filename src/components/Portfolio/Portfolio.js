@@ -17,9 +17,10 @@ class Portfolio extends React.Component {
       {name: 'Technical Documentation Page', tags: ['SCSS', 'Responsive Design'], description: 'A clone of a MDN Web Documentation Page', src: 'https://github.com/ryanjmack/fcc-technical-documentation-page', demo: 'https://ryanjmack.github.io/fcc-technical-documentation-page'},
       {name: 'Pomodoro Clock', tags: ['JavaScript', 'Responsive Design'], description: 'A pomodoro clock with customizable settings', src: 'https://github.com/ryanjmack/pomodoro-clock', demo: 'https://ryanjmack.github.io/pomodoro-clock'},
       {name: 'Local Weather Viewer', tags: ['Geolocation', 'API'], description: 'Displays user\'s local weather using geolocation', src: 'https://github.com/ryanjmack/Local-Weather', demo: 'https://ryanjmack.github.io/Local-Weather'}
-    ].map(project => {
+    ].map((project, i) => {
+      // https://stackoverflow.com/a/43892905/6894170
       return (
-        <div className='Portfolio__card'>
+        <div className='Portfolio__card' key={i}>
           <h2>{project.name}</h2>
           <p>{project.description}</p>
           <div className='Portfolio__links'>
@@ -37,9 +38,14 @@ class Portfolio extends React.Component {
     });
 
     return (
-      <main className='Portfolio'>
-        {portfolio}
-      </main>
+      <div>
+        <div className='Portfolio__title'>
+          <h1>Portfolio</h1>
+        </div>
+        <main className='Portfolio'>
+          {portfolio}
+        </main>
+      </div>
     );
   }
 

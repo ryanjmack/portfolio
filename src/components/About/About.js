@@ -1,5 +1,8 @@
 import React from 'react';
 import './About.css';
+import resume_docx from './ryan_mack_resume.docx';
+import resume_pdf from './ryan_mack_resume.pdf';
+
 
 class About extends React.Component {
 
@@ -14,8 +17,8 @@ class About extends React.Component {
           <p>While I'm not programming I'm probably doing something <span className='About__highlight'>outdoors</span> and usually active like <span className='About__highlight'>cycling</span> 50+ miles, <span className='About__highlight'>hiking</span> somewhere cool like Yosemite Falls (the tallest waterfall in North America) or Mt. Elbert (the tallest mountain in Colorado), or <span className='About__highlight'>playing sports</span> with my friends at a park.</p>
           <p>While recovering from my strenuous activities I enjoy <span className='About__highlight'>cooking</span>, playing <span className='About__highlight'>videogames</span>, or watching <span className='About__highlight'>documentaries</span>. Remember I told you I love learning new things? I wasn't lying!</p>
           <p className="About__last-paragraph">If you want to learn about my background a little more you can take a look at my resume below!</p>
-          <p><a className='About__resume' href='./ryan_mack_resume.docx' download>Resume (.docx)</a></p>
-          <p><a className='About__resume' href='./ryan_mack_resume.pdf' download>Resume (.pdf)</a></p>
+          <p><a className='About__resume' href={resume_docx} download>Resume (.docx)</a></p>
+          <p><a className='About__resume' href={resume_pdf} download>Resume (.pdf)</a></p>
         </div>
       </main>
     );
